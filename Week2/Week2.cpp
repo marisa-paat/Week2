@@ -3,7 +3,8 @@
 #include <iostream>
 using namespace std;
 
-float findCube(float n) {
+float findCube(float n) 
+{
     return n * n * n;
 }
 
