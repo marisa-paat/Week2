@@ -2,13 +2,27 @@
 #include <iostream>
 using namespace std;
 
+bool IsLeapYear(int year)
+{
+	if (year % 400 == 0 || year % 4 == 0 && year % 100 != 0))
+	{
+		return bool = true
+	}
+	else
+	{
+		 return bool = false
+	}
+ }
+
 int main() 
 {
 	int year;
 	cout << "Please enter a year: ";
 	cin >> year;
 
-	if (year % 400 == 0 || year % 4 == 0 && year % 100 != 0)) 
+	IsLeapYear(year);
+
+	if (true) 
 	{
 		cout << year << " is a leap year!";
 	}

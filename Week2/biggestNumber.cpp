@@ -2,6 +2,21 @@
 #include <iostream>
 using namespace std;
 
+int GetMax(int number, int i, float arr[100])
+{
+	for (i = 0; i < number; ++i)
+	{
+		if (arr[0] < arr[i])
+		{
+			//replace with largest number
+			arr[0] = arr[i];
+		}
+	}
+
+	count << "Biggest number is " << arr[0];
+
+}
+
 int main()
 {
 	int number, i;
@@ -17,16 +32,7 @@ int main()
 		cin >> arr[i]
 	}
 
-	for (i = 0; i < number; ++i)
-	{
-		if (arr[0] < arr[i])
-		{
-			//replace with largest number
-			arr[0] = arr[i];
-		}
-	}
-
-	count << "Biggest number is " << arr[0];
+	GetMax();
 
 	return 0;
 }

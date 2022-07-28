@@ -3,9 +3,21 @@
 #include <iostream>
 using namespace std;
 
-float findCube(float n) 
+float FindCube(float n) 
 {
     return n * n * n;
+}
+
+int FindSum(int a, int b, int c)
+{
+    int sum = a + b + c;
+    return sum;
+}
+
+int FindAverage(int a, int b, int c)
+{
+    int average = (a + b + c) / 3;
+    return average;
 }
 
 int main()
@@ -24,10 +36,10 @@ int main()
     cout << "Rnter number 3 : ";
     cin >> c;
 
-    cube = findCube(a);
+    cube = FindCube(a);
+    int sum = FindSum(a, b, c);
+    int average = FindAverage(a, b, c);
 
-    int sum = a + b + c;
-    int average = (a + b + c) / 3;
     cout << "Cube of " << a << " is: " << cube << endl;
     cout << "Average = " << average << "and Sum = " << sum << endl;
 }

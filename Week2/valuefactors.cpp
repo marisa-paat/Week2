@@ -2,14 +2,9 @@
 #include <iostream>
 using namespace std;
 
-int main()
+void GetFactor(int number)
 {
-	int number, i;
-
-	cout << "Please enter a positive number: ";
-	cin >> number;
-
-	cout << "Factors of " << number << " are: ";
+	int i;
 
 	for (i = 1; i <= number; i++)
 	{
@@ -20,4 +15,17 @@ int main()
 
 		return 0;
 	}
+}
+}
+
+int main()
+{
+	int number
+
+	cout << "Please enter a positive number: ";
+	cin >> number;
+
+	cout << "Factors of " << number << " are: ";
+
+	GetFactor(number);
 }
